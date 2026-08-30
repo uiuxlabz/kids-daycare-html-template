@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact KIDER — Schedule a tour, ask about enrollment, or get directions to our childcare center.">
+  <title>Contact Us — KIDER Kids Daycare</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ======== Header ======== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">🌱</div>
+        <div class="header__logo-text">KID<span>ER</span></div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="programs.html" class="nav__link">Programs</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+        <div class="nav__cta">
+          <a href="contact.html" class="btn btn--green btn--sm">Enroll Now</a>
+        </div>
+      </nav>
+      <div class="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== Page Hero ======== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">Contact Us</h1>
+      <p class="reveal">Have questions? Ready to enroll? We would love to hear from you and welcome your family to KIDER.</p>
+    </div>
+  </section>
+
+  <!-- ======== Contact Content ======== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Enrollment Form -->
+        <div class="form-card reveal">
+          <h3>Enrollment Inquiry</h3>
+          <p>Fill out the form below and we will get back to you within one business day to discuss enrollment options for your child.</p>
+          <form data-form="enrollment">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parent-name">Parent / Guardian Name</label>
+                <input type="text" id="parent-name" name="parent-name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="child-name">Child's Name</label>
+                <input type="text" id="child-name" name="child-name" placeholder="Your child's name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="child-age">Child's Age</label>
+                <select id="child-age" name="child-age" required>
+                  <option value="">Select age group</option>
+                  <option value="6-18m">6 – 18 Months</option>
+                  <option value="18-24m">18 – 24 Months</option>
+                  <option value="2-3y">2 – 3 Years</option>
+                  <option value="3-4y">3 – 4 Years</option>
+                  <option value="4-5y">4 – 5 Years</option>
+                  <option value="5-8y">5 – 8 Years</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="start-date">Preferred Start Date</label>
+                <input type="date" id="start-date" name="start-date" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="program">Program of Interest</label>
+              <select id="program" name="program">
+                <option value="">Select a program</option>
+                <option value="tiny-explorers">Tiny Explorers (6–18 Months)</option>
+                <option value="curious-crawlers">Curious Crawlers (18–24 Months)</option>
+                <option value="little-adventurers">Little Adventurers (2–3 Years)</option>
+                <option value="creative-thinkers">Creative Thinkers (3–4 Years)</option>
+                <option value="big-dreamers">Big Dreamers (4–5 Years)</option>
+                <option value="after-school">After-School Explorers (5–8 Years)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" name="message" placeholder="Tell us about your child, any special needs, or questions you have..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--green btn--lg" style="width: 100%; margin-top: var(--sp-2);">Submit Inquiry</button>
+            <div class="form-ok">Thank you! Your inquiry has been received. We will contact you within one business day.</div>
+            <div class="form-err">Please fill in all required fields correctly before submitting.</div>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info reveal reveal--right">
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon contact-info-card__icon--green">📍</div>
+            <div>
+              <h4>Our Location</h4>
+              <p>123 Sunshine Lane<br>Meadowville, CA 90210</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon contact-info-card__icon--orange">📞</div>
+            <div>
+              <h4>Phone Us</h4>
+              <p>(555) 123-4567<br>Mon – Fri, 7:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon contact-info-card__icon--yellow">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@kider.com<br>We respond within 24 hours</p>
+            </div>
+          </div>
+
+          <!-- Operating Hours -->
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon contact-info-card__icon--green">🕐</div>
+            <div style="flex: 1;">
+              <h4>Operating Hours</h4>
+              <table class="hours-table">
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>7:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>8:00 AM – 1:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.0!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzA3LjkiTiAxMTjCsDE0JzM3LjMiVw!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="220"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              title="KIDER location map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <img src="assets/img/call-to-action.jpg" alt="Children at KIDER" class="cta-section__bg">
+        <div class="cta-section__overlay"></div>
+        <div class="cta-section__content reveal">
+          <h2>Prefer to Talk in Person?</h2>
+          <p>Call us at (555) 123-4567 or visit us at 123 Sunshine Lane. We are always happy to answer your questions and give you a tour.</p>
+          <div class="cta-section__actions">
+            <a href="tel:+15551234567" class="btn btn--yellow btn--lg">Call Now</a>
+            <a href="programs.html" class="btn btn--outline-white btn--lg">View Our Programs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">🌱 KID<span>ER</span></div>
+          <p>KIDER is a licensed childcare center dedicated to nurturing young minds through play-based learning, creative expression, and loving care since 2014.</p>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Programs</h5>
+          <ul class="footer__links">
+            <li><a href="programs.html">Tiny Explorers</a></li>
+            <li><a href="programs.html">Little Adventurers</a></li>
+            <li><a href="programs.html">Big Dreamers</a></li>
+            <li><a href="programs.html">After-School Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact Info</h5>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon">📍</div>
+            <span>123 Sunshine Lane, Meadowville, CA 90210</span>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon">📞</div>
+            <span>(555) 123-4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon">✉️</div>
+            <span>hello@kider.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> KIDER Kids Daycare. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
